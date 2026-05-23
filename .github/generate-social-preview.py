@@ -44,23 +44,24 @@ font_descriptor = ImageFont.truetype(str(font_dir / "Manrope-Medium.ttf"), 16)
 tagline = "Pagando o justo. Nem um centavo a mais."
 tagline_bbox = draw.textbbox((0, 0), tagline, font=font_tagline)
 tagline_w = tagline_bbox[2] - tagline_bbox[0]
+tagline_h = tagline_bbox[3] - tagline_bbox[1]
 tagline_x = (W - tagline_w) // 2
-tagline_y = logo_y + logo.height + 60
+tagline_y = logo_y + logo.height + 70
 draw.text((tagline_x, tagline_y), tagline, font=font_tagline, fill=WHITE)
 
-# Descritor "Design System · v2026.1"
+# Linha decorativa em Teal — abaixo da tagline com folga para o descender
+line_w = 80
+line_x = (W - line_w) // 2
+line_y = tagline_y + tagline_h + 50
+draw.rectangle([line_x, line_y, line_x + line_w, line_y + 3], fill=ACCENT)
+
+# Descritor — abaixo da linha
 descriptor = "DESIGN  SYSTEM   ·   v2026.1   ·   MANROPE   ·   8  CORES  AUTORIZADAS"
 descriptor_bbox = draw.textbbox((0, 0), descriptor, font=font_descriptor)
 descriptor_w = descriptor_bbox[2] - descriptor_bbox[0]
 descriptor_x = (W - descriptor_w) // 2
-descriptor_y = tagline_y + 60
+descriptor_y = line_y + 22
 draw.text((descriptor_x, descriptor_y), descriptor, font=font_descriptor, fill=SOFT)
-
-# Linha decorativa em Teal acima do descritor
-line_w = 80
-line_x = (W - line_w) // 2
-line_y = tagline_y + 50
-draw.rectangle([line_x, line_y, line_x + line_w, line_y + 2], fill=ACCENT)
 
 # Output
 out = REPO / ".github" / "social-preview.png"
