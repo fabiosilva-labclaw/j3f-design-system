@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J3F Design System</title>
+  <meta name="description" content="Brand kit oficial e design tokens da J3F Consultoria | Tax Intelligence.">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logos/avatar/J3F_avatar_01.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --verde-escuro: #005263;
+      --teal: #00ACCA;
+      --verde-claro: #96C9D7;
+      --cobre: #9E947E;
+      --bege-claro: #EEE7D7;
+      --cinza: #999999;
+      --preto: #000000;
+      --branco: #FFFFFF;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--branco);
+      color: var(--preto);
+      line-height: 1.5;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    .hero {
+      background: var(--verde-escuro);
+      color: var(--branco);
+      padding: 96px 24px;
+      text-align: center;
+    }
+    .hero img {
+      width: 240px;
+      max-width: 60%;
+      margin-bottom: 32px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .hero .tagline {
+      font-size: clamp(16px, 2vw, 21px);
+      color: var(--verde-claro);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .hero .badges {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hero .badge {
+      background: rgba(150, 201, 215, 0.15);
+      border: 1px solid var(--verde-claro);
+      color: var(--verde-claro);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* Section */
+    section { padding: 80px 0; }
+    section h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--verde-escuro);
+      margin-bottom: 12px;
+    }
+    section .lead {
+      font-size: 18px;
+      color: var(--cinza);
+      max-width: 720px;
+      margin-bottom: 48px;
+    }
+
+    /* Grid de cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--branco);
+      border: 1px solid var(--verde-claro);
+      border-radius: 6px;
+      padding: 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 82, 99, 0.1);
+      border-color: var(--teal);
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--verde-claro);
+      color: var(--verde-escuro);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--verde-escuro);
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--cinza);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card .arrow {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    /* Paleta */
+    .palette-section { background: var(--bege-claro); }
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 8px;
+    }
+    .swatch {
+      aspect-ratio: 1;
+      border-radius: 4px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .swatch-name { font-weight: 600; font-size: 14px; }
+    .swatch-hex { letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
+
+    /* Footer */
+    footer {
+      background: var(--verde-escuro);
+      color: var(--verde-claro);
+      padding: 48px 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer .meta {
+      margin-top: 16px;
+      color: rgba(150, 201, 215, 0.6);
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <img src="logos/svg/J3F_logo_primario_branco.svg" alt="J3F Consultoria | Tax Intelligence">
+    <h1>J3F Design System</h1>
+    <p class="tagline">Brand kit oficial e design tokens da J3F Consultoria. Cores, tipografia, logotipos e tom de voz — fonte única de verdade para todo material institucional e produto digital.</p>
+    <div class="badges">
+      <span class="badge">v2026.1</span>
+      <span class="badge">Manrope</span>
+      <span class="badge">8 cores autorizadas</span>
+      <span class="badge">W3C Design Tokens</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Comece por aqui</h2>
+      <p class="lead">Quatro caminhos rápidos para entender e consumir o brand kit.</p>
+      <div class="grid">
+        <a href="docs/brand-summary.html" class="card" onclick="this.href='docs/brand-summary.md'">
+          <div class="card-icon">B</div>
+          <h3>Brand summary</h3>
+          <p>Síntese executiva: identidade, golden circle, manifesto, taglines, paleta, tipografia, regras de logo, fotografia.</p>
+          <span class="arrow">Ler resumo →</span>
+        </a>
+        <a href="docs/color-palette.md" class="card">
+          <div class="card-icon">P</div>
+          <h3>Paleta</h3>
+          <p>Oito cores autorizadas com HEX, RGB e CMYK. Combinações recomendadas, tokens semânticos, contrastes WCAG.</p>
+          <span class="arrow">Ver cores →</span>
+        </a>
+        <a href="docs/typography.md" class="card">
+          <div class="card-icon">T</div>
+          <h3>Tipografia</h3>
+          <p>Manrope, oito pesos, escala completa por suporte (Word, slide, planilha, web, e-mail).</p>
+          <span class="arrow">Ver tipografia →</span>
+        </a>
+        <a href="docs/logo-usage.md" class="card">
+          <div class="card-icon">L</div>
+          <h3>Logotipo</h3>
+          <p>Variantes oficiais, posicionamento permitido, área de respiração, proporção, combinações com fundo.</p>
+          <span class="arrow">Ver regras →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="palette-section">
+    <div class="container">
+      <h2>Paleta J3F 2026</h2>
+      <p class="lead">Apenas estas oito cores são autorizadas. Qualquer outra cor está fora do brand kit.</p>
+      <div class="palette">
+        <div class="swatch" style="background:#005263; color:#FFFFFF;">
+          <span class="swatch-name">Verde Escuro</span>
+          <span class="swatch-hex">#005263</span>
+        </div>
+        <div class="swatch" style="background:#00ACCA; color:#FFFFFF;">
+          <span class="swatch-name">Teal</span>
+          <span class="swatch-hex">#00ACCA</span>
+        </div>
+        <div class="swatch" style="background:#96C9D7; color:#005263;">
+          <span class="swatch-name">Verde Claro</span>
+          <span class="swatch-hex">#96C9D7</span>
+        </div>
+        <div class="swatch" style="background:#9E947E; color:#FFFFFF;">
+          <span class="swatch-name">Cobre</span>
+          <span class="swatch-hex">#9E947E</span>
+        </div>
+        <div class="swatch" style="background:#EEE7D7; color:#005263;">
+          <span class="swatch-name">Bege Claro</span>
+          <span class="swatch-hex">#EEE7D7</span>
+        </div>
+        <div class="swatch" style="background:#999999; color:#FFFFFF;">
+          <span class="swatch-name">Cinza</span>
+          <span class="swatch-hex">#999999</span>
+        </div>
+        <div class="swatch" style="background:#000000; color:#FFFFFF;">
+          <span class="swatch-name">Preto</span>
+          <span class="swatch-hex">#000000</span>
+        </div>
+        <div class="swatch" style="background:#FFFFFF; color:#005263; border:1px solid #96C9D7;">
+          <span class="swatch-name">Branco</span>
+          <span class="swatch-hex">#FFFFFF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Exemplos prontos</h2>
+      <p class="lead">Aplicações de referência em HTML, prontas para copiar e adaptar.</p>
+      <div class="grid">
+        <a href="examples/color-showcase.html" class="card">
+          <div class="card-icon">●</div>
+          <h3>Color showcase</h3>
+          <p>Galeria visual da paleta primária e secundária com HEX, RGB e uso recomendado de cada token.</p>
+          <span class="arrow">Abrir exemplo →</span>
+        </a>
+        <a href="examples/card-component.html" class="card">
+          <div class="card-icon">▣</div>
+          <h3>Card component</h3>
+          <p>Componente de card em três variantes (claro, escuro, warm) para dashboards e propostas.</p>
+          <span class="arrow">Abrir exemplo →</span>
+        </a>
+        <a href="examples/email-signature.html" class="card">
+          <div class="card-icon">✉</div>
+          <h3>Assinatura de e-mail</h3>
+          <p>Template HTML institucional pronto para colar no Gmail, Outlook ou Apple Mail.</p>
+          <span class="arrow">Abrir exemplo →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--bege-claro);">
+    <div class="container">
+      <h2>Como consumir</h2>
+      <p class="lead">Tokens disponíveis em cinco formatos. Escolha o que se encaixa no seu projeto.</p>
+      <div class="grid">
+        <a href="tokens/brand.json" class="card">
+          <div class="card-icon" style="background:var(--teal); color:var(--branco);">{ }</div>
+          <h3>brand.json</h3>
+          <p>W3C Design Tokens. Canônico. Consumo por LLMs, Figma, Style Dictionary.</p>
+        </a>
+        <a href="tokens/brand.css" class="card">
+          <div class="card-icon" style="background:var(--teal); color:var(--branco);">CSS</div>
+          <h3>brand.css</h3>
+          <p>CSS Custom Properties. Sites estáticos, componentes web sem build.</p>
+        </a>
+        <a href="tokens/brand.ts" class="card">
+          <div class="card-icon" style="background:var(--teal); color:var(--branco);">TS</div>
+          <h3>brand.ts</h3>
+          <p>TypeScript const tipado. React, Vue, Svelte.</p>
+        </a>
+        <a href="tokens/brand.py" class="card">
+          <div class="card-icon" style="background:var(--teal); color:var(--branco);">PY</div>
+          <h3>brand.py</h3>
+          <p>Módulo Python. Streamlit, geração de PPTX/DOCX/XLSX.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>J3F Design System</strong> v2026.1 · Designer: Lucas Barreira (março/2026)</p>
+      <p style="margin-top:8px;">
+        <a href="https://github.com/fabiosilva-labclaw/j3f-design-system">GitHub</a> ·
+        <a href="README.md">README</a> ·
+        <a href="CHANGELOG.md">Changelog</a> ·
+        <a href="LICENSE">Licença</a> ·
+        <a href="https://j3f.com.br">j3f.com.br</a>
+      </p>
+      <p class="meta">Pagando o justo. Nem um centavo a mais.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

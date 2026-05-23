@@ -1,0 +1,47 @@
+{
+  "name": "j3f-design-system",
+  "version": "2026.1.0",
+  "description": "Brand kit oficial e design tokens da J3F Consultoria | Tax Intelligence. Cores, tipografia, logotipos e tom de voz.",
+  "keywords": [
+    "design-system",
+    "brand",
+    "design-tokens",
+    "j3f",
+    "tax-intelligence",
+    "consultoria-tributaria"
+  ],
+  "homepage": "https://github.com/fabiosilva-labclaw/j3f-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosilva-labclaw/j3f-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiosilva-labclaw/j3f-design-system/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "J3F Consultoria",
+    "email": "fabio@j3f.com.br",
+    "url": "https://j3f.com.br"
+  },
+  "files": [
+    "tokens/",
+    "logos/svg/",
+    "logos/png/",
+    "fonts/",
+    "docs/",
+    "manifest.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "tokens/brand.ts",
+  "exports": {
+    ".": "./tokens/brand.ts",
+    "./brand.json": "./tokens/brand.json",
+    "./brand.css": "./tokens/brand.css",
+    "./brand.scss": "./tokens/brand.scss",
+    "./manifest": "./manifest.json"
+  },
+  "style": "tokens/brand.css",
+  "sass": "tokens/brand.scss"
+}

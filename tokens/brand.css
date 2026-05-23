@@ -1,0 +1,70 @@
+/* J3F Brand Tokens 2026 — CSS Custom Properties */
+/* Source: Manual de marca J3F 2026.pdf | Generated from brand.json */
+
+:root {
+  /* === COLORS — PRIMARY === */
+  --j3f-verde-escuro: #005263;
+  --j3f-teal:         #00ACCA;
+  --j3f-verde-claro:  #96C9D7;
+
+  /* === COLORS — SECONDARY === */
+  --j3f-cobre:        #9E947E;
+  --j3f-bege-claro:   #EEE7D7;
+  --j3f-cinza:        #999999;
+  --j3f-preto:        #000000;
+  --j3f-branco:       #FFFFFF;
+
+  /* === SEMANTIC === */
+  --j3f-text-primary:    var(--j3f-preto);
+  --j3f-text-secondary:  var(--j3f-cinza);
+  --j3f-text-on-dark:    var(--j3f-branco);
+  --j3f-bg:              var(--j3f-branco);
+  --j3f-bg-alt:          var(--j3f-bege-claro);
+  --j3f-bg-dark:         var(--j3f-verde-escuro);
+  --j3f-accent:          var(--j3f-teal);
+  --j3f-accent-soft:     var(--j3f-verde-claro);
+  --j3f-border:          var(--j3f-verde-claro);
+  --j3f-divider:         var(--j3f-cinza);
+
+  /* === TYPOGRAPHY === */
+  --j3f-font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  --j3f-fw-extralight: 200;
+  --j3f-fw-light:      300;
+  --j3f-fw-regular:    400;
+  --j3f-fw-medium:     500;
+  --j3f-fw-semibold:   600;
+  --j3f-fw-bold:       700;
+  --j3f-fw-extrabold:  800;
+
+  /* === TYPE SCALE (em rem, base 16px) === */
+  --j3f-fs-display: 4.5rem;   /* 72px */
+  --j3f-fs-h1:      3rem;     /* 48px */
+  --j3f-fs-h2:      2.25rem;  /* 36px */
+  --j3f-fs-h3:      1.5rem;   /* 24px */
+  --j3f-fs-lead:    1.3125rem;/* 21px */
+  --j3f-fs-body:    1rem;     /* 16px */
+  --j3f-fs-small:   0.8125rem;/* 13px */
+
+  /* === SPACING === */
+  --j3f-space-xs: 0.25rem;
+  --j3f-space-sm: 0.5rem;
+  --j3f-space-md: 1rem;
+  --j3f-space-lg: 2rem;
+  --j3f-space-xl: 4rem;
+}
+
+/* Base reset hooks */
+body.j3f {
+  font-family: var(--j3f-font-family);
+  color: var(--j3f-text-primary);
+  background: var(--j3f-bg);
+  font-weight: var(--j3f-fw-regular);
+  line-height: 1.5;
+}
+.j3f-display { font-size: var(--j3f-fs-display); font-weight: var(--j3f-fw-semibold); line-height: 1.05; }
+.j3f-h1      { font-size: var(--j3f-fs-h1);      font-weight: var(--j3f-fw-semibold); line-height: 1.1; }
+.j3f-h2      { font-size: var(--j3f-fs-h2);      font-weight: var(--j3f-fw-semibold); line-height: 1.15; }
+.j3f-h3      { font-size: var(--j3f-fs-h3);      font-weight: var(--j3f-fw-semibold); line-height: 1.2; }
+.j3f-lead    { font-size: var(--j3f-fs-lead);    font-weight: var(--j3f-fw-regular); line-height: 1.4; }
+.j3f-small   { font-size: var(--j3f-fs-small);   color: var(--j3f-text-secondary); }

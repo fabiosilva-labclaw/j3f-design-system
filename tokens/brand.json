@@ -1,0 +1,166 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "brand": {
+    "name": "J3F Consultoria | Tax Intelligence",
+    "version": "2026.1",
+    "release": "2026-04",
+    "manualSource": "Manual de marca J3F 2026.pdf",
+    "designedBy": "Lucas Barreira, Março/2026"
+  },
+  "colors": {
+    "primary": {
+      "verdeEscuro": {
+        "name": "Verde Escuro",
+        "hex": "#005263",
+        "rgb": [0, 82, 99],
+        "cmyk": [98, 45, 42, 33],
+        "role": "Cor principal institucional. Fundo escuro, headers, capas."
+      },
+      "teal": {
+        "name": "Teal Principal",
+        "hex": "#00ACCA",
+        "rgb": [0, 172, 202],
+        "cmyk": [83, 0, 19, 0],
+        "role": "Cor de destaque. Acentos, links, CTAs, gráficos."
+      },
+      "verdeClaro": {
+        "name": "Verde Claro",
+        "hex": "#96C9D7",
+        "rgb": [150, 201, 215],
+        "cmyk": [50, 2, 16, 0],
+        "role": "Apoio. Backgrounds suaves, divisores, dataviz secundária."
+      }
+    },
+    "secondary": {
+      "cobre": {
+        "name": "Cobre",
+        "hex": "#9E947E",
+        "rgb": [158, 148, 126],
+        "cmyk": [36, 32, 47, 15],
+        "role": "Acento neutro quente. Detalhes, ícones, separadores."
+      },
+      "begeClaro": {
+        "name": "Bege Claro",
+        "hex": "#EEE7D7",
+        "rgb": [238, 231, 215],
+        "cmyk": [7, 9, 19, 0],
+        "role": "Background quente, cards, blocos de citação."
+      },
+      "cinza": {
+        "name": "Cinza",
+        "hex": "#999999",
+        "rgb": [153, 153, 153],
+        "cmyk": [41, 32, 32, 11],
+        "role": "Texto secundário, captions, metadados."
+      },
+      "preto": {
+        "name": "Preto",
+        "hex": "#000000",
+        "rgb": [0, 0, 0],
+        "cmyk": [0, 0, 0, 100],
+        "role": "Texto corrido em fundos claros."
+      },
+      "branco": {
+        "name": "Branco",
+        "hex": "#FFFFFF",
+        "rgb": [255, 255, 255],
+        "cmyk": [0, 0, 0, 0],
+        "role": "Background principal em documentos e slides."
+      }
+    },
+    "semantic": {
+      "textPrimary": "#000000",
+      "textSecondary": "#999999",
+      "textOnDark": "#FFFFFF",
+      "background": "#FFFFFF",
+      "backgroundAlt": "#EEE7D7",
+      "backgroundDark": "#005263",
+      "accent": "#00ACCA",
+      "accentSoft": "#96C9D7",
+      "border": "#96C9D7",
+      "divider": "#999999"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "Manrope",
+      "fallbackStack": "Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif"
+    },
+    "weights": {
+      "extraLight": 200,
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semiBold": 600,
+      "bold": 700,
+      "extraBold": 800
+    },
+    "scale": {
+      "display": { "size": "72pt", "weight": 600, "lineHeight": 1.05, "use": "Capas e títulos hero" },
+      "h1":      { "size": "48pt", "weight": 600, "lineHeight": 1.1,  "use": "Títulos de capítulo" },
+      "h2":      { "size": "36pt", "weight": 600, "lineHeight": 1.15, "use": "Títulos de seção" },
+      "h3":      { "size": "24pt", "weight": 600, "lineHeight": 1.2,  "use": "Subtítulos" },
+      "lead":    { "size": "21pt", "weight": 400, "lineHeight": 1.4,  "use": "Texto introdutório" },
+      "body":    { "size": "12pt", "weight": 400, "lineHeight": 1.5,  "use": "Corpo de texto Word/parecer" },
+      "bodyDoc": { "size": "11pt", "weight": 400, "lineHeight": 1.5,  "use": "Corpo padrão de pareceres tributários" },
+      "small":   { "size": "9pt",  "weight": 400, "lineHeight": 1.4,  "use": "Notas de rodapé, captions" }
+    }
+  },
+  "spacing": {
+    "logoClearSpace": "1x",
+    "documentMargins": {
+      "top": "2.5cm",
+      "bottom": "2.5cm",
+      "left": "3cm",
+      "right": "2cm"
+    }
+  },
+  "logo": {
+    "rules": {
+      "position": ["topo-esquerda", "base-esquerda", "topo-centralizado", "base-centralizado"],
+      "forbiddenPositions": ["lado-direito"],
+      "minClearSpace": "1x",
+      "neverRecreate": true,
+      "useOriginalAssetsOnly": true,
+      "preserveAspectRatio": true,
+      "noStretch": true,
+      "noDistortion": true,
+      "scalingNotes": "Redimensionar sempre proporcionalmente. Nunca achatar nem esticar. Nunca alterar a relação largura/altura original. Nunca aplicar transformações que distorçam a geometria do símbolo (skew, shear, escala não uniforme)."
+    },
+    "variants": {
+      "primary": "Logo J3F 1",
+      "secondary": "Logo J3F 2",
+      "isotype": "Iso J3F"
+    }
+  },
+  "voice": {
+    "pillars": ["Autoritário porém acessível", "Vanguardista & Tech", "Preciso & Seguro"],
+    "wordsToUse": ["Inteligência Fiscal", "Precisão", "Conformidade", "Fôlego Financeiro", "Estratégico", "Segurança Jurídica", "Tecnologia", "Dados", "Oportunidade", "Justiça Fiscal", "Auditoria Consultiva", "Tranquilidade"],
+    "wordsToAvoid": ["Burocracia", "Problema", "Desespero", "Gastos", "Talvez", "Acho", "Tradicional"],
+    "taglines": {
+      "principal": "Pagando o justo. Nem um centavo a mais.",
+      "manifesto": "Precisão técnica. Inteligência fiscal.",
+      "descritor": "Tax Intelligence",
+      "fullName": "J3F Consultoria | Tax Intelligence"
+    }
+  },
+  "company": {
+    "legalName": "J3F Consultoria",
+    "displayName": "J3F Consultoria | Tax Intelligence",
+    "domain": "j3f.com.br",
+    "address": "São Paulo, SP",
+    "people": {
+      "fabio": {
+        "fullName": "Fábio Garcia da Silva",
+        "role": "Sócio-fundador",
+        "oab": "OAB/SP 232.079",
+        "email": "fabio@j3f.com.br"
+      },
+      "jose": {
+        "fullName": "José Ernesto",
+        "role": "Sócio",
+        "email": "jose@j3f.com.br"
+      }
+    }
+  }
+}

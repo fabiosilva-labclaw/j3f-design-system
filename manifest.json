@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "brand": {
+    "id": "j3f-2026",
+    "name": "J3F Consultoria",
+    "fullName": "J3F Consultoria | Tax Intelligence",
+    "tagline": "Pagando o justo. Nem um centavo a mais.",
+    "manifesto": "Precisão técnica. Inteligência fiscal.",
+    "descriptor": "Tax Intelligence",
+    "industry": "Consultoria Tributária",
+    "country": "Brasil",
+    "language": "pt-BR",
+    "founded": "2001",
+    "domain": "j3f.com.br"
+  },
+  "version": {
+    "current": "2026.1",
+    "released": "2026-04",
+    "designer": "Lucas Barreira",
+    "designDate": "2026-03",
+    "supersedes": "J3F 2025 (paleta e tipografia descontinuadas)"
+  },
+  "assets": {
+    "tokens": {
+      "canonical": "tokens/brand.json",
+      "format": "W3C Design Tokens (Community Group)",
+      "formats": ["json", "css", "scss", "ts", "py"]
+    },
+    "logos": {
+      "directory": "logos/",
+      "variants": {
+        "primary": "Logo J3F 1 — símbolo + wordmark",
+        "secondary": "Logo J3F 2 — compacto",
+        "isotype": "Iso J3F — apenas símbolo"
+      },
+      "colors": ["verde", "preto", "branco"],
+      "backgrounds": ["fundo claro", "fundo escuro", "fundo verde escuro"],
+      "preferred": "logos/svg/",
+      "rasterFallback": "logos/png/",
+      "print": "logos/pdf/"
+    },
+    "fonts": {
+      "primary": "Manrope",
+      "directory": "fonts/manrope/",
+      "weights": [200, 300, 400, 500, 600, 700, 800],
+      "variableFont": "fonts/manrope/Manrope-VariableFont_wght.ttf",
+      "license": "SIL Open Font License 1.1"
+    },
+    "writing": {
+      "summary": "docs/brand-summary.md",
+      "voice": "docs/tom-de-voz.md",
+      "language": "pt-BR"
+    },
+    "examples": {
+      "directory": "examples/",
+      "available": [
+        "color-showcase.html",
+        "card-component.html",
+        "email-signature.html"
+      ]
+    }
+  },
+  "consumption": {
+    "raw": "https://raw.githubusercontent.com/fabiosilva-labclaw/j3f-design-system/main/",
+    "npm": "j3f-design-system",
+    "submodule": "git submodule add https://github.com/fabiosilva-labclaw/j3f-design-system.git brand"
+  },
+  "people": {
+    "owner": {
+      "name": "Fábio Garcia da Silva",
+      "role": "Sócio-fundador, mantenedor técnico",
+      "oab": "OAB/SP 232.079",
+      "email": "fabio@j3f.com.br"
+    },
+    "designer": {
+      "name": "Lucas Barreira",
+      "role": "Designer da marca 2026",
+      "delivered": "2026-03"
+    }
+  },
+  "constraints": {
+    "logoPositions": ["topo-esquerda", "base-esquerda", "topo-centralizado", "base-centralizado"],
+    "logoForbidden": ["lado-direito", "skew", "shear", "escala não uniforme", "achatamento", "esticamento"],
+    "fontsForbidden": ["Georgia", "Calibri", "Playfair Display", "DM Sans", "serifadas"],
+    "colorsDeprecated": ["#505459", "#54BFC3", "#3A9EA2", "#7DD4D7", "#D4F0F1", "#F7F8F9", "#2C3E50", "#D4A853"],
+    "vocabularyAvoid": ["Burocracia", "Problema", "Desespero", "Gastos", "Talvez", "Acho", "Tradicional"],
+    "vocabularyPreferred": ["Inteligência Fiscal", "Precisão", "Conformidade", "Fôlego Financeiro", "Estratégico", "Segurança Jurídica", "Tecnologia", "Dados", "Oportunidade", "Justiça Fiscal", "Auditoria Consultiva", "Tranquilidade"]
+  }
+}

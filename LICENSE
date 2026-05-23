@@ -1,0 +1,70 @@
+J3F Design System — Licença Dual
+=================================
+
+Este repositório contém dois tipos de material com licenças distintas.
+
+------------------------------------------------------------
+1. Código, tokens e exemplos (MIT License)
+------------------------------------------------------------
+
+Aplica-se a:
+- tokens/brand.json, brand.css, brand.scss, brand.ts, brand.py
+- examples/*.html
+- .github/**
+- manifest.json, package.json
+- toda a documentação em docs/ e README.md
+
+MIT License
+
+Copyright (c) 2026 J3F Consultoria
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------
+2. Brand Assets (proprietários — All Rights Reserved)
+------------------------------------------------------------
+
+Aplica-se a:
+- logos/svg/**, logos/png/**, logos/pdf/**, logos/avatar/**
+- Manual de marca J3F 2026.pdf (quando incluído)
+- Marca nominativa "J3F", "J3F Consultoria", "Tax Intelligence" e taglines
+
+Copyright © 2026 J3F Consultoria. Todos os direitos reservados.
+
+Os assets visuais identificados acima são propriedade exclusiva da J3F
+Consultoria. Sua reprodução, distribuição, modificação ou uso em produtos,
+serviços, comunicações ou materiais de terceiros requer autorização escrita
+prévia.
+
+Uso interno por colaboradores, parceiros oficiais e clientes da J3F
+Consultoria em contexto de prestação de serviços é permitido, respeitadas as
+regras de aplicação descritas em docs/logo-usage.md.
+
+Para solicitações de uso externo: fabio@j3f.com.br
+
+------------------------------------------------------------
+3. Manrope (SIL Open Font License 1.1)
+------------------------------------------------------------
+
+Aplica-se a:
+- fonts/manrope/*.ttf
+
+Distribuída sob a licença SIL Open Font License versão 1.1. Texto integral
+em fonts/manrope/OFL.txt. Copyright 2018 The Manrope Project Authors
+(https://github.com/sharanda/manrope).
